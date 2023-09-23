@@ -13,9 +13,6 @@ SOURCES +=	main.cpp \
     arduinolibs/libraries/Crypto/Hash.cpp \
     arduinolibs/libraries/Crypto/SHA256.cpp \
     arduinolibs/libraries/Crypto/BLAKE2b.cpp \
-    scrypt/crypto_scrypt.c \
-	scrypt/sha256.c \
-	scrypt/warnp.c \
     libcppotp/bytes.cpp \
     libcppotp/otp.cpp \
     libcppotp/sha1.cpp \
@@ -45,10 +42,6 @@ HEADERS += \
 	arduinolibs/libraries/Crypto/SHA256.h \
 	arduinolibs/libraries/Crypto/Hash.h \
 	arduinolibs/libraries/Crypto/BLAKE2b.h \
-	scrypt/crypto_scrypt.h \
-	scrypt/sha256.h \
-	scrypt/sysendian.h \
-	scrypt/warnp.h \
 	libcppotp/bytes.h \
     libcppotp/otp.h \
     libcppotp/sha1.h \
