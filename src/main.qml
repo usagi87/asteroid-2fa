@@ -378,7 +378,7 @@ Application {
             antialiasing: false
         	opacity: 1.0
         	mipmap:true
-         	source: "file:/home/ceres/export.jpeg"
+         	source: "file:/home/ceres/Pictures/export.jpg"
          	
         
         MouseArea {
