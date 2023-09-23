@@ -1,0 +1,8 @@
+{
+    "db": "[\n    {\n        \"info\": {\n            \"algo\": \"SHA1\",\n            \"digit\": 6,\n            \"period\": 30,\n            \"secret\": \"ABCDEFGHIJKLMNOP\"\n        },\n        \"issuer\": \"GOOGLE\",\n        \"type\": \"totp\"\n    },\n    {\n        \"info\": {\n            \"algo\": \"SHA1\",\n            \"digit\": 6,\n            \"period\": 30,\n            \"secret\": \"ABCDEFGHIJKLMOPT\"\n        },\n        \"issuer\": \"GITHUB\",\n        \"type\": \"totp\"\n    }\n]\n",
+    "key": {
+        "nonce": "",
+        "salt": "",
+        "tag": ""
+    }
+}
