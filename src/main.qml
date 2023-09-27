@@ -283,6 +283,7 @@ Application {
 				height: Dims.h(15)
 				previewText: qsTrId("Shared secret")
 				inputMethodHints:Qt.ImhNumbersOnly | Qt.ImhUppercaseOnly
+				maximumLength:16
 				text:getText2
 				MouseArea {
        				anchors.fill: parent
