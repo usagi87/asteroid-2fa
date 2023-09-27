@@ -1,7 +1,3 @@
-### Credit
-Based on https://github.com/ChandlerSwift/asteroid-authenticator.
-Uses Rhys Weatherley's arduinolibs Crypto library and 
-https://github.com/Tarsnap/scrypt source code.
 
 # Asteroid Authenticator
 A Two-Factor auth app for [AsteroidOS](http://asteroidos.org/)
@@ -19,16 +15,19 @@ Proper time set (including the time zone)
 Clock can be set using a synchronization client see https://asteroidos.org/wiki/synchronization-clients/.
 
 ### Use
-App support encryption  using AES256. Supports adding and removing entries. 
+App support encryption  using AES256. Supports adding and removing entries, export database as qr code 
 For more read wiki.
 
 ### Building
 ```
-mkdir build
-cd build
-qmake ..
-make
+export CMAKE_PROGRAM_PATH=/usr/local/oecore-x86_64/sysroots/armv7vehf-neon-oe-linux-gnueabi/usr/bin/
+source /usr/local/oecore-x86_64/environment-setup-armv7vehf-neon-oe-linux-gnueabi
+cmake -B build -DCMAKE_INSTALL_PREFIX:PATH=/usr
+cmake --build build --target package
 ```
 
-### Acknowledgements
+### Credit
+Based on https://github.com/ChandlerSwift/asteroid-authenticator.
+Uses Rhys Weatherley's arduinolibs Crypto library and 
+https://github.com/Tarsnap/scrypt source code.
 TOTP code based on https://github.com/RavuAlHemio/cpptotp
